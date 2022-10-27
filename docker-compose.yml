@@ -1,0 +1,21 @@
+
+version: '3.1'
+
+services:
+
+  dev-db:
+    image: postgres
+    ports: 
+       - 8080:8080
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: nest
+
+  adminer:
+    image: adminer
+    restart: always
+  
+
+
